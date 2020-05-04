@@ -18,7 +18,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A Dummy project for implementing bootstrap.
+A Dummy project showing information about MS Dhoni regarding records,achievements,etc for implementing bootstrap.
 
 
 
