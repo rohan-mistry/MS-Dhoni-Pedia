@@ -9,59 +9,71 @@
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-  
+  <style>
+	.navbar-nav .nav-item .nav-link:hover {
+		color: blue !important; /* Change to blue on hover */
+	}
+</style>
 </head>
 <body data-scroll="spy" data-target=".navbar" data-offset="10">
-	
+	 
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+	// Set interval for automatic carousel movement
+	$('#slideshow').carousel({
+		interval: 3000, // Time in milliseconds (e.g., 3000 = 3 seconds)
+		pause: "hover" // Pause on hover
+	});
+});
+</script>
 
 <!--CAROUSEL-->
-	<div id="slideshow" class="carousel slide" style="margin-top: 50px;" data-ride="carousel">
-
-
-		<ul class="carousel-indicators">
-			<li data-target="#slideshow" data-slide-to="0" class="active"></li>
-			<li data-target="#slideshow" data-slide-to="1"></li>
-			<li data-target="#slideshow" data-slide-to="2"></li>
-		</ul>
-
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="assets/images/ms1.jpg"  >
-			</div>
-			<div class="carousel-item">
-				<img src="assets/images/ms2.jpg" >
-			</div>
-			<div class="carousel-item">
-				<img src="assets/images/ms3.jpg" >
-			</div>
+<div id="slideshow" class="carousel slide" style="margin-top: 50px;" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slideshow" data-slide-to="0" class="active"></li>
+		<li data-target="#slideshow" data-slide-to="1"></li>
+		<li data-target="#slideshow" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="assets/images/ms1.jpg">
 		</div>
-		<a href="#slideshow" class="carousel-control-prev" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-		<a href="#slideshow" class="carousel-control-next" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
+		<div class="carousel-item">
+			<img src="assets/images/ms2.jpg">
+		</div>
+		<div class="carousel-item">
+			<img src="assets/images/ms3.jpg">
+		</div>
 	</div>
-	<!--NAVBAR-->
-	<nav class="navbar navbar-expand-sm  fixed-top " style="background-color:#143566;">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleContent" style="color: white" >
-    		&#9776;
-        </button>	  
-  		<div class="collapse navbar-collapse" id="collapsibleContent">
-  			<ul class="navbar-nav">
-				<li class="nav-item"><a href="#sec1" class="nav-link text-monospace " style="color: white" >ABOUT</a></li>
-				<li class="nav-item"><a href="#sec2" class="nav-link text-monospace" style="color: white">RECORDS</a></li>
-				<li class="nav-item"><a href="#sec3" class="nav-link text-monospace" style="color: white">ICC TRUIMPHS</a></li>
-				<li class="nav-item"><a href="#sec4" class="nav-link text-monospace" style="color: white">PERSONAL LIFE</a></li>
-				<li class="nav-item"><a href="quiz.html" class="nav-link text-monospace" style="color: white">QUIZ</a></li>
+	<a href="#slideshow" class="carousel-control-prev" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a href="#slideshow" class="carousel-control-next" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+</div>
+
+
+	<nav class="navbar navbar-expand-sm fixed-top" style="background-color:#143566;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleContent" style="color: white;">
+			&#9776;
+		</button>	  
+		<div class="collapse navbar-collapse" id="collapsibleContent">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#sec1" class="nav-link text-monospace" style="color: white;">ABOUT</a></li>
+				<li class="nav-item"><a href="#sec2" class="nav-link text-monospace" style="color: white;">RECORDS</a></li>
+				<li class="nav-item"><a href="#sec3" class="nav-link text-monospace" style="color: white;">ICC TRUIMPHS</a></li>
+				<li class="nav-item"><a href="#sec4" class="nav-link text-monospace" style="color: white;">PERSONAL LIFE</a></li>
+				<li class="nav-item"><a href="quiz.html" class="nav-link text-monospace" style="color: white;">QUIZ</a></li>
 			</ul>
 			<ul class="navbar-nav ml-auto">
-				<a href="contact.html" class=" text-white" ><i class="fas fa-envelope"></i>CONTACT</a>
+				<a href="contact.html" class="text-white"><i class="fas fa-envelope"></i>CONTACT</a>
 			</ul>
-		
-  		</div>
-		
-	</nav>			
+		</div>
+	</nav>
+	
 		
 
 	<div class="container-fluid">
@@ -459,6 +471,6 @@ In 2010, Dhoni arrives at a hotel. Sakshi Rawat, a hotel official fails to recog
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
+ 
 </body>
 </html>
